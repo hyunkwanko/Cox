@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style media="screen">
+      .container {
+        background-color: powderblue;
+        height: 200px;
+        display: flex;
+        flex-direction: row; /* 행의 방향으로 정렬시키겠다. */
+      }
+      .item {
+        background-color: tomato;
+        color: white;
+        border: 1px solid white;
+        /* flex-grow: 1; /* 컨테이너를 꽉 채워준다. n으로 나눈다.*/ */
+      }
+      .item:nth-child(1){
+        flex-basis: 300px;
+        flex-shrink: 2; /* 화면 크기를 조절해도 컨텐츠의 크기가 변화없도록 하는 기능*/
+      }
+      .item:nth-child(2){
+        flex-basis: 300px;
+        /* flex-grow: 2; /* 이것만 크기가 2가 된다.*/
+        /* flex-basis:200px; */
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+    </div>
+  </body>
+</html>

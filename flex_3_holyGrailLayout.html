@@ -1,0 +1,76 @@
+<!-- https://opentutorials.org/module/2367/13526 -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style media="screen">
+      html{ /* UI를 가운데 위치 */
+        height:100%;
+      }
+      body{
+        height:100%;
+        display:flex;
+        align-items:center; /* 수직 레이아웃을 조절 */
+        justify-content: center; /* 수평 레이아웃을 조절 */
+      }
+      .container{
+        display: flex;
+        flex-direction: column;
+        width: 800px;
+      }
+      header{
+        border-bottom: 1px solid gray;
+        padding-left: 20px;
+      }
+      footer{
+        border-top: 1px solid gray;
+        padding: 20px;
+        text-align: center;
+      }
+      .content{
+        display: flex;
+      }
+      .content nav{
+        border-right: 1px solid gray;
+      }
+      .content aside{
+        border-left: 1px solid gray;
+      }
+      nav, aside{
+        flex-basis: 150px;
+        flex-shrink: 0;
+      }
+      main{
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>세렌디피티</h1>
+
+      </header>
+      <section class="content">
+        <nav>
+          <ul>
+            <li>html</li>
+            <li>css</li>
+            <li>javasript</li>
+          </ul>
+        </nav>
+        <main>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </main>
+        <aside>
+          AD
+        </aside>
+
+      </section>
+      <footer>
+        <a href="https://naver.com">홈페이지</a>
+      </footer>
+    </div>
+
+  </body>
+</html>
