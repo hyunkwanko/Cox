@@ -11,7 +11,7 @@
             <div class="container">
                 <div class="row">
                     <div class="mx-auto p-5 my-5 col-md-8">
-                        <h1 class="display-4"><a class="p-2 text-secondary" style="text-decoration:none; color:#5363a0 !important;" href="/"><b>Everyolo</b></a></h1>
+                        <h1 class="display-4"><a class="p-2 text-secondary" style="text-decoration:none; color:#5363a0 !important;" href="/?id=<%=query%>"><b>Everyolo</b></a></h1>
                     </div>
                 </div>
             </div>
@@ -31,12 +31,12 @@
                             <div class="blockquote-footer" style="text-align:right;">Someone famous in <cite>My memories</cite></div>
                         </div>
                         <div>
-                            <form action="/topic/delete_process" method="post">
+                            <form action="/topic/delete_process?id=<%=query%>" method="post">
                                 <div class="form-group mb-3" style="width: 20em;">
                                     <input type="hidden" name="id" value="<%=id%>">
                                 </div>
                                 <p style="float:right;">
-                                    <a class="btn btn-primary my-2" href="/topic/update/<%=id%>">UPDATE</a>
+                                    <a class="btn btn-primary my-2" href="/topic/update/<%=id%>?id=<%=query%>">UPDATE</a>
                                     <button type="submit" value="delete" class="btn btn-primary my-2">DELETE</button>
                                 </p>
                             </form>

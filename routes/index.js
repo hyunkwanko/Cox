@@ -13,7 +13,7 @@ router.get('/', (request, response) => {
     db.query(`SELECT * FROM ${query_id}`, (err, topics) =>{        
         response.render('main', {
             list : topics,
-            id : query_id
+            query : query_id
         });
     });
 });
