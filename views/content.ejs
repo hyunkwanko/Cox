@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <% include ./part/head.ejs %> 
+        <link rel="stylesheet" href="../css/wireframe.css">
+    </head>
+    <body>
+        <% include ./part/nav.ejs %> 
+
+        <div class="py-5 text-center mx-3 mb-3" style="background-image: url('../assets/styleguide/cover_2.jpg');background-size:cover;">
+            <div class="container">
+                <div class="row">
+                    <div class="mx-auto p-5 my-5 col-md-8">
+                        <h1 class="display-4"><a class="p-2 text-secondary" style="text-decoration:none; color:#5363a0 !important;" href="/"><b>Everyolo</b></a></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <%#contents start%>
+        <div class="py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2><%=list[0].title%></h2>
+                        <hr>
+                        <p class="lead">
+                            <%-list[0].description%>
+                        </p>
+                        <div class="blockquote">
+                            <div class="blockquote-footer" style="text-align:right;">Someone famous in <cite>My memories</cite></div>
+                        </div>
+                        <div>
+                            <form action="/topic/delete_process" method="post">
+                                <div class="form-group mb-3" style="width: 20em;">
+                                    <input type="hidden" name="id" value="<%=id%>">
+                                </div>
+                                <p style="float:right;">
+                                    <a class="btn btn-primary my-2" href="/topic/update/<%=id%>">UPDATE</a>
+                                    <button type="submit" value="delete" class="btn btn-primary my-2">DELETE</button>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <%#contents end%>
+        
+        <% include ./part/footer.ejs %> 
+    </body>
+</html>
