@@ -5,12 +5,12 @@ var url = require('url');
 
 router.get('/', (request, response) => {
     var get_url = url.parse(request.url, true);
-    var query_id = "";
+    var query_id = "topic"; // default
     if (get_url.query.id != undefined){
         query_id = get_url.query.id;
         // console.log(query_id);
     }
-    db.query(`SELECT * FROM topic`, (err, topics) =>{        
+    db.query(`SELECT * FROM ${query_id}`, (err, topics) =>{        
         response.render('main', {
             list : topics,
             id : query_id
