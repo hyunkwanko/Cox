@@ -5,7 +5,6 @@ var bodyParser = require('body-parser');
 var compression = require('compression'); // 파일 압축 모듈
 var indexRouter = require('./routes');
 var topicRouter = require('./routes/topic');
-var authorRouter = require('./routes/author');
 var helmet = require('helmet'); // 보안
 var path = require('path'); // 보안 적용
 
@@ -27,7 +26,6 @@ app.get('*', (request, response, next) => { // 미들웨어를 직접 생성해�
 
 app.use('/', indexRouter); // /으로 시작하는 주소에 topicRouter 미들웨어를 수행
 app.use('/topic', topicRouter); // /topic으로 시작하는 주소에 topicRouter 미들웨어를 수행
-app.use('/author', authorRouter); // /topic으로 시작하는 주소에 topicRouter 미들웨어를 수행
 
 app.use((request, response, next) => { // 예 : /asdf 입력하면 못찾아서 에러 메시지 수행
     response.status(404).send('404 Not found');

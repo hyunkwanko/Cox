@@ -30,7 +30,7 @@ router.post('/login_process', (request, response) => {
             db.query(sql, (err, result) => {}); // 이미 존재해도 상관없다.
             console.log("Table Created!");
         });
-        response.redirect(`/?user=${post.username}`); // main 페이지로 리디렉션
+        response.redirect(`/?id=${post.username}`); // main 페이지로 리디렉션
     });
 });
 
