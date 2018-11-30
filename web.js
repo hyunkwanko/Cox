@@ -1,12 +1,12 @@
-var express = require('express'); // express 모듈 가져오기
-var app = express(); // express 메소드 호출
+var express = require('express');
+var app = express();
 var fs = require('fs');
 var bodyParser = require('body-parser');
-var compression = require('compression'); // 파일 압축 모듈
+var compression = require('compression');
 var indexRouter = require('./routes');
 var topicRouter = require('./routes/topic');
-var helmet = require('helmet'); // 보안
-var path = require('path'); // 보안 적용
+var helmet = require('helmet'); // Security
+var path = require('path'); // Security
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

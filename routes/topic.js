@@ -49,7 +49,7 @@ router.post('/delete_process', (request, response) => { // post 방식
     });
 });
 
-router.get('/:pageId', (request, response) => { // 상세 보기
+router.get('/:pageId', (request, response) => { // 상세 보기 (Main)
     var filteredId = path.parse(request.params.pageId).base; // 보안 적용 -> 경로가 차단됨. 예를 들어 ../
     db.query(`SELECT * FROM topic WHERE id = ?`,[filteredId], (err, list) =>{
         // console.log(topics[0]); // topic은 배열로써 들어오기 때문에 이런 형식이다.
