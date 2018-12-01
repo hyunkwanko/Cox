@@ -25,7 +25,7 @@ router.post('/create_process', (request, response) => { // post 방식
             if(err){
                 throw err;
             }
-            response.redirect(`/topic/${result.insertId}?id=${getURL}`); // redirection, 생성된 id를 찾는 약속
+            response.redirect(`/topic/${result.insertId}?id=${getURL}`);
         }
     );
 });
