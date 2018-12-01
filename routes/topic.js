@@ -21,7 +21,7 @@ router.post('/create_process', (request, response) => { // post 방식
     getURL = template.getURL(getURL);
     db.query(
         `INSERT INTO ${getURL} (title, description, source) VALUES(?, ?, ?)`,
-        [post.title, post.description, "test"], (err, result) =>{
+        [post.title, post.description, "hyunkwan"], (err, result) =>{
             if(err){
                 throw err;
             }
