@@ -22,20 +22,20 @@ router.get('/login', (request, response) => {
 router.post('/login_process', (request, response) => {
     var post = request.body;
     db.query(`SELECT * FROM user WHERE username=? AND password=?`, [post.username, post.password], (err, topic) => {
-        if (err){ // 등록이 안되어있다면
-            response.redirect(`/`);
-        }
-        db.connect((err) => {
-            var sql = `CREATE TABLE ${post.username} (
-                id INT AUTO_INCREMENT PRIMARY KEY,
-                title VARCHAR(40),
-                description TEXT,
-                source VARCHAR(40)
-            )`;
-            db.query(sql, (err, result) => {}); // 이미 존재해도 상관없다.
-            console.log("Table Created!");
-        });
-        response.redirect(`/?id=${post.username}`);
+        if (topic[0].username != undefined){ // Not Registered
+            response.redirect(`/?id=${post.username}`);
+        }        
+        // db.connect((err) => {
+        //     var sql = `CREATE TABLE ${post.username} (
+        //         id INT AUTO_INCREMENT PRIMARY KEY,
+        //         title VARCHAR(40),
+        //         description TEXT,
+        //         source VARCHAR(40)
+        //     )`;
+        //     db.query(sql, (err, result) => {}); // 이미 존재해도 상관없다.
+        //     console.log("Table Created!");
+        // });
+        // response.redirect(`/?id=${post.username}`);
     });
 });
 
