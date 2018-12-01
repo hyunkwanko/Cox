@@ -36,7 +36,6 @@ router.post('/signup_process', (request, response) => {
     var post = request.body;
     db.query(`SELECT * FROM user WHERE username=?`, [post.username], (err, topic) => {
         if (!err) { // Already Exist
-            console.log(err);
             response.send(`
                 <script type="text/javascript">
                     alert("이미 존재하는 아이디");	
