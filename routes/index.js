@@ -1,19 +1,16 @@
 var express = require('express');
 var router = express.Router();
 var db = require('../lib/db');
+var template = require('../lib/template');
 var url = require('url');
 
 router.get('/', (request, response) => {
-    var get_url = url.parse(request.url, true);
-    var query_id = "topic"; // default
-    if (get_url.query.id != undefined){
-        query_id = get_url.query.id;
-        // console.log(query_id);
-    }
-    db.query(`SELECT * FROM ${query_id}`, (err, topics) =>{        
+    var getURL = url.parse(request.url, true);
+    getURL = template.getURL(getURL);
+    db.query(`SELECT * FROM ${getURL}`, (err, topics) =>{        
         response.render('main', {
             list : topics,
-            query : query_id
+            query : getURL
         });
     });
 });
