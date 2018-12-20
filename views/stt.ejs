@@ -20,23 +20,18 @@
 
         <%#contents start%>
         <div class="container">
-            <form action="/topic/create_process?id=<%=query%>" method="post">
-                <div class="app"> 
-                    <div class="form-group mb-3" style="width: 20em;">
-                        <input type="text" name="title" class="form-control" placeholder="Title">
-                    </div>
-
-                    <div class="input-single">
-                        <textarea id="note-textarea" placeholder="Typing or Voice" rows="6"></textarea>
-                    </div>         
-                    <button id="start-record-btn" title="Start Recording">Start Recognition</button>
-                    <button id="pause-record-btn" title="Pause Recording">Pause Recognition</button>
-                    <p id="recording-instructions">
-                        Press the <strong>Start Recognition</strong> button and allow access.
-                    </p>
-                    <button type="submit" class="btn btn-primary my-2" style="float:right;">CREATE</button>
+            <div class="app">
+                <div class="form-group mb-3" style="width: 20em;">
+                    <input type="text" name="title" class="form-control" placeholder="Title">
                 </div>
-            </form>
+                <div class="input-single">
+                    <textarea id="note-textarea" name="description" placeholder="Create a new note by typing or using voice recognition." rows="6"></textarea>
+                </div>         
+                <button id="start-record-btn" title="Start Recording">Start Recognition</button>
+                <button id="pause-record-btn" title="Pause Recording">Pause Recognition</button>
+                <p id="recording-instructions">Press the <strong>Start Recognition</strong> button and allow access.</p>
+                <p><button type="submit" class="btn btn-primary my-2" style="float:right;">CREATE</button></p>
+            </div>
         </div>
         <%#contents end%>
 
