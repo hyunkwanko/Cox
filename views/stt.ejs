@@ -20,30 +20,28 @@
 
         <%#contents start%>
         <div class="container">
-            <div class="app"> 
-                <h3>Add New Note</h3>
-                <div class="input-single">
-                    <textarea id="note-textarea" placeholder="Create a new note by typing or using voice recognition." rows="6"></textarea>
-                </div>         
-                <button id="start-record-btn" title="Start Recording">Start Recognition</button>
-                <button id="pause-record-btn" title="Pause Recording">Pause Recognition</button>
-                <button id="save-note-btn" title="Save Note">Save Note</button>   
-                <p id="recording-instructions">Press the <strong>Start Recognition</strong> button and allow access.</p>
-                
-                <h3>My Notes</h3>
-                <ul id="notes">
-                    <li>
-                        <p class="no-notes">You don't have any notes.</p>
-                    </li>
-                </ul>
-            </div>
+            <form action="/topic/create_process?id=<%=query%>" method="post">
+                <div class="app"> 
+                    <div class="form-group mb-3" style="width: 20em;">
+                        <input type="text" name="title" class="form-control" placeholder="Title">
+                    </div>
+
+                    <div class="input-single">
+                        <textarea id="note-textarea" placeholder="Typing or Voice" rows="6"></textarea>
+                    </div>         
+                    <button id="start-record-btn" title="Start Recording">Start Recognition</button>
+                    <button id="pause-record-btn" title="Pause Recording">Pause Recognition</button>
+                    <p id="recording-instructions">
+                        Press the <strong>Start Recognition</strong> button and allow access.
+                    </p>
+                    <button type="submit" class="btn btn-primary my-2" style="float:right;">CREATE</button>
+                </div>
+            </form>
         </div>
         <%#contents end%>
 
         <% include ./part/footer.ejs %>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <!-- Only used for the demos ads. Please ignore and remove. --> 
-        <script src="https://cdn.tutorialzine.com/misc/enhance/v3.js" async></script>
         <script>
             try {
                 var SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
