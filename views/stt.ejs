@@ -1,24 +1,25 @@
 <!DOCTYPE html>
     <head>
-        <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Voice Controlled Notes App</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shoelace-css/1.0.0-beta16/shoelace.css">
-        <link rel="stylesheet" href="styles.css">
-
+        <link rel="stylesheet" href="../css/wireframe.css">
+        <% include ./part/head.ejs %> 
     </head>
     <body>
+        <% include ./part/nav.ejs %> 
+
+        <div class="py-5 text-center mx-3 mb-3" style="background-image: url('../assets/styleguide/cover_2.jpg');background-size:cover;">
+            <div class="container">
+                <div class="row">
+                    <div class="mx-auto p-5 my-5 col-md-8">
+                        <h1 class="display-4"><a class="p-2 text-secondary" style="text-decoration:none; color:#5363a0 !important;" href="/?id=<%=query%>"><b>Everyolo</b></a></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <%#contents start%>
         <div class="container">
-            <h1>Voice Controlled Notes App</h1>
-            <p class="page-description">A tiny app that allows you to take notes by recording your voice</p>
-            <p><a class="tz-link" href="https://tutorialzine.com/2017/08/converting-from-speech-to-text-with-javascript">Read the full article on Tutorialzine »</a></p>
-
-            <h3 class="no-browser-support">Sorry, Your Browser Doesn't Support the Web Speech API. Try Opening This Demo In Google Chrome.</h3>
-
             <div class="app"> 
                 <h3>Add New Note</h3>
                 <div class="input-single">
@@ -39,6 +40,7 @@
         </div>
         <%#contents end%>
 
+        <% include ./part/footer.ejs %>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <!-- Only used for the demos ads. Please ignore and remove. --> 
         <script src="https://cdn.tutorialzine.com/misc/enhance/v3.js" async></script>
