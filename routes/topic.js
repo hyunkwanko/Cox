@@ -15,6 +15,16 @@ router.get('/create', (request, response) => {
     });
 });
 
+router.get('/stt', (request, response) => {
+    var getURL = url.parse(request.url, true);
+    getURL = template.getURL(getURL);
+    db.query(`SELECT * FROM ${getURL}`, (err, topics) =>{
+        response.render('stt', {
+            query : getURL
+        });
+    });
+});
+
 router.post('/create_process', (request, response) => { // post 방식
     var post = request.body; // POST로 받은 데이터를 미들웨어로 간결하게 받는다.
     var getURL = url.parse(request.url, true);
