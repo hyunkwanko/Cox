@@ -1,0 +1,83 @@
+
+
+
+
+body {
+  padding-top: 54px;
+   font-family: 'Nanum Gothic','Varela Round', sans-serif;
+}
+header .container{
+  text-align: center;
+  padding-top: 3em;
+}
+
+.container #cox {
+  font-size: 4em;
+  border : 1px;
+}
+
+.btn-primary {
+    background-color: #FAAC58;
+    border-color: #FAAC58;
+    color: #FFF; 
+  
+  
+}
+.btn-primary:hover,
+.btn-primary:focus {
+    border-color:#FE9A2E;
+    background-color:#FE9A2E;
+    color: #FFF; }
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:active:focus,
+.btn-primary:active:hover {
+    border-color: #FE9A2E;
+    background-color: #FE9A2E;
+    color: #FFF; }
+
+.contents {
+  margin-top: 10vh;
+  font-family: 'Nanum Gothic','Varela Round', sans-serif;
+}
+
+.contents .container .row {
+  margin-bottom: 10vh;
+}
+
+
+@media (min-width: 992px) {
+  body {
+    
+    padding-top: 56px;
+    font-family: 'Nanum Gothic','Varela Round', sans-serif;
+  }
+}
+
+.business-header {
+  height: 70vh;
+  min-height: 100px;
+  background-image : url('../pic/nimg1.jpg') ;
+  background-size : cover ;
+  opacity: 0.85;
+}
+
+
+.card {
+  height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("../pic/img4.jpg");
+  background-size: cover;
+  min-height: 400px;
+  
+}
+
+.bgimg-3{
+    background-image: url("../pic/beige.jpg");
+    background-size: cover;
+    min-height: 150px;
+    opacity: 0.75;
+}
