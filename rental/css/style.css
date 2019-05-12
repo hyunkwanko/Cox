@@ -553,7 +553,7 @@ ul {
   content: "";
   width: 50%;
   height: 100%;
-  background-image: url(../img/banner_overlay.png);
+  background-image: url(../img/busan.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1371,7 +1371,7 @@ ul {
 /************passion css start***************/
 /* line 2, E:/161 Real estate/161_Real_state_html/sass/_apartment.scss */
 .apartment_part {
-  padding-top: 130px;
+  padding: 130px 0;
 }
 
 @media (max-width: 576px) {
