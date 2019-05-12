@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="css/swiper.min.css">
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     
   </head>
   <body>
@@ -40,7 +41,7 @@
     <div class="site-mobile-menu-body"></div>
   </div>
 
-  <header class="header-bar d-flex d-lg-flex align-items-center inner-page-header" data-aos="fade-down">
+  <header class="header-bar d-flex d-lg-flex align-items-center" data-aos="fade-down">
     <div class="site-logo">
       <a href="index.html">Thumber</a>
     </div>
@@ -49,9 +50,9 @@
 
     <div class="main-menu d-none">
       <ul class="js-clone-nav">
-        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="index.html">Home</a></li>
         <li><a href="photos.html">Photos</a></li>
-        <li class="active"><a href="bio.html">About Me</a></li>
+        <li><a href="bio.html">About Me</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
       <ul class="social js-clone-nav">
@@ -63,48 +64,26 @@
   </header> 
   
 
-  <main class="main-content">
-    <div class="container-fluid photos">
-      <div class="row justify-content-center">
-        
-        <div class="col-md-6 pt-4">
-          
-
-          <h2 class="text-white mb-4" data-aos="fade-up">Howdy! I'm Jay</h2>
-
-          <div class="row" data-aos="fade-up">
-            <div class="col-md-12">
-
-              <div>
-                <p>Lorem ipsum dolor sit amet, consectetur <a href="#">adipisicing</a> elit. Ipsa explicabo quasi cum, laudantium neque at veniam itaque atque <a href="#">necessitatibus</a> temporibus! Beatae sit soluta magni neque autem, suscipit dolorem, quo alias.</p>
-                <p>Similique deserunt sit accusamus ipsum optio. Quia, sapiente saepe culpa ad nemo velit, <a href="#">veritatis</a> numquam impedit voluptate quo tempore. Perferendis suscipit dolores, ducimus esse cupiditate possimus quae quis iusto rem?</p>
-                <p>Excepturi soluta maxime velit vitae tempore corporis, aliquid quidem modi libero! Optio minima esse hic repellendus a dolor perferendis dolore impedit quis et! Minus maxime itaque beatae totam eos reiciendis.</p>
-                <p class="mb-5">Ad veritatis eos dicta, animi et voluptates iusto, excepturi corporis amet, laboriosam, officiis libero. Odio excepturi aliquid suscipit nobis odit. Tenetur expedita impedit error consequatur sunt voluptatum voluptate voluptatem vitae!</p>
-                </div>
-
-                <div class="mb-4">
-                  <img src="images/person_4.jpg" class="img-fluid rounded-circle" style="max-width: 80px; ">
-                </div>
-                <p class="mt-4 ml-2">Thanks! <br> <strong class="text-white">Jay Cooper</strong></p>
-              </div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="row justify-content-center">
-        <div class="col-md-12 text-center py-5">
-          <p>
-        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
-        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-      </p>
-        </div>
-      </div>
-    </div>
-  </main>
-
-</div> <!-- .site-wrap -->
+  <div class="swiper-container gallery-top">
+  <div class="swiper-wrapper">
+      <?php
+        $uploadfile = './'. $_FILES['upload']['name'];
+          if(move_uploaded_file($_FILES['upload']['tmp_name'], $uploadfile)){
+              if($_FILES['upload']['type'] == 'image/jpeg' || $_FILES['upload']['type'] == 'image/png')
+                  // echo "<img src ={$uploadfile}>";
+                  echo "
+                      <div class='swiper-slide cover' style='background-image: url({$uploadfile});'>
+                          <a href={$uploadfile} data-fancybox='gallery' class='zoom'><span class='fas fa-search'></span></a>
+                      </div>
+                  ";
+              else if($_FILES['upload']['type'] == 'video/mp4')
+                  echo "<video width='100%' height='100%' controls><source src ={$uploadfile}></video>";
+              echo "<br><a style='background-color:#ffc10794; border-radius:1rem; border:none;' href='http://210.125.126.112:8080/function/process/gan/gan_result.php?{$_FILES['upload']['name']}'>Result</a>";
+              } else {
+              echo "File Upload Fail";
+          }
+      ?>
+  </div>
 
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>

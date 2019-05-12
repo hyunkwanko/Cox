@@ -76,7 +76,6 @@
                   <div class="breadcrumb_iner">
                       <div class="breadcrumb_iner_item">
                           <h2>GAN</h2>
-                          <p><span class="ti-angle-double-right"></span> Generative Adversarial Network</p>
                       </div>
                   </div>
               </div>
@@ -102,21 +101,18 @@
                      <img src="img/blog_1.png" alt="">
                   </div>
                   <div class="single_appartment_content">
-                     <p><a href="#">GAN</a></p>
-                     <a href="blog.html">
-                     <div class="contents">
-            <div class="container" style="text-align:center">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <form method="post" action="./process/gan/gan_upload.php" enctype="multipart/form-data">
-                            <input type="file" class="btn btn-info" name="upload">
-                            <input type="submit" class="btn btn-info" value="미리보기">
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-                     </a>
+                     <div class="contents" style="text-align:center;">
+                        <div class="container">
+                           <div class="row">
+                              <div class="col-sm-12">
+                                    <form method="post" action="./preview/main.php" enctype="multipart/form-data">
+                                       <input type="file" name="upload">
+                                       <input type="submit" style="background-color:#ffc10794; border-radius:1rem; border:none;" value="Preview">
+                                    </form>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
                   </div>
                </div>
             </div>
