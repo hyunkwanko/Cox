@@ -202,15 +202,15 @@
                <div class="review_part_text owl-carousel">
                   <div class="singler_eview_part">
                      <div class="client_info">
-                        <img src="img/client_1.png" alt="">
-                        <h4>Mouunt Alezaber</h4>
-                        <p>Project manager</p>
+                        <img src="img/hyunkwan.png" alt="">
+                        <h4>Hyunkwan Ko</h4>
+                        <p>Department of IT Convergence and Application Engineering</p>
                      </div>
-                     <p><i>Enim a, scelerisque aliquet. Vivamus neque diam sed at, pede laoreet orci.
-                           Potenti vel In sagittis nulla augue vitae et tempus torquent. Lacinia neque
-                           mus taciti ante prsent at facilisis. Enim a, scelerisque aliquet. Vivamus
-                           neque diam sed at, pede laoreet orci Potti, vel. In sagittis nulla augue
-                           vitae et tempus torquent.</i></p>
+                     <p><i>
+                     As a senior in the IT department of National Pukyong National University,
+                     I am currently working on a face-to-face transformation project using deep learning.
+                     I am very interested in web development and artificial intelligence.
+                     </i></p>
                   </div>
                   <div class="singler_eview_part">
                      <div class="client_info">
@@ -267,7 +267,7 @@
                <div class="single_footer_part">
                   <h4>Important Link</h4>
                   <ul class="list-unstyled">
-                     <li><a href=""> WHMCS-bridge</a></li>
+                     <li><a href="">WHMCS-bridge</a></li>
                      <li><a href="">Search Domain</a></li>
                      <li><a href="">My Account</a></li>
                      <li><a href="">Shopping Cart</a></li>

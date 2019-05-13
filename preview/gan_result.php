@@ -54,10 +54,6 @@
                   </a>
               ";
           ?>
-
-          <!-- <a href="../gan.php">
-              <span class="icon-undo h3"></span> 
-          </a> -->
       </div>
   </header> 
   
