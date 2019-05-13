@@ -122,8 +122,8 @@
                      <div class="media">
                         <img src="img/blog_2.png" class=" mr-3" alt="...">
                         <div class="media-body align-self-center">
-                           <p><a href="#">home</a></p>
-                           <a href="blog.html">
+                           <p><a href="#">ITEM</a></p>
+                           <a href="#">
                               <h5 class="mt-0">Green very from for rule stars seasons</h5>
                            </a>
                         </div>
@@ -133,8 +133,8 @@
                      <div class="media">
                         <img src="img/blog_3.png" class="mr-3" alt="...">
                         <div class="media-body align-self-center">
-                           <p><a href="#">Apartment</a></p>
-                           <a href="blog.html">
+                           <p><a href="#">ITEM</a></p>
+                           <a href="#">
                               <h5 class="mt-0">Moveth wherein subdue of brought</h5>
                            </a>
                         </div>
@@ -144,8 +144,8 @@
                      <div class="media">
                         <img src="img/blog_4.png" class="mr-3" alt="...">
                         <div class="media-body align-self-center">
-                           <p><a href="blog.html">Apartment</a></p>
-                           <a href="">
+                           <p><a href="#">ITEM</a></p>
+                           <a href="#">
                               <h5 class="mt-0">Firmament heaven cant him night rule</h5>
                            </a>
                         </div>
