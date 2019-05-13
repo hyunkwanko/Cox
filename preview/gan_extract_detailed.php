@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Thumber &mdash; Colorlib Website Template</title>
+    <title>COX</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -42,24 +42,15 @@
 
   <header class="header-bar d-flex d-lg-flex align-items-center inner-page-header" data-aos="fade-down">
     <div class="site-logo">
-      <a href="index.html">Thumber</a>
+      <a href="index.html">COX</a>
     </div>
-    
-    <div class="d-inline-block d-xl-block ml-md-0 ml-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span> <span style="position: relative;top: -4px; text-transform: uppercase;">Menu</span></a></div>
 
-    <div class="main-menu d-none">
-      <ul class="js-clone-nav">
-        <li><a href="index.html">Home</a></li>
-        <li class="active"><a href="photos.html">Photos</a></li>
-        <li><a href="bio.html">About Me</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <ul class="social js-clone-nav">
-        <li><a href="#"><span class="icon-facebook"></span></a></li>
-        <li><a href="#"><span class="icon-twitter"></span></a></li>
-        <li><a href="#"><span class="icon-instagram"></span></a></li>
-      </ul>
+    <div class="d-inline-block d-xl-block ml-md-0 ml-auto py-3" style="position: relative; top: 3px;">
+        <a href="../gan_select_model.php">
+            <span class="icon-undo h3"></span>
+        </a>
     </div>
+
   </header> 
   
 
@@ -244,7 +235,7 @@
         <div class="col-md-12 text-center py-5">
           <p>
         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
       </p>
         </div>
