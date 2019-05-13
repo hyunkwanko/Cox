@@ -105,10 +105,10 @@
                         <div class="container">
                            <div class="row">
                               <div class="col-sm-12">
-                                    <form method="post" action="./preview/main.php" enctype="multipart/form-data">
-                                       <input type="file" name="upload">
-                                       <input type="submit" style="background-color:#ffc10794; border-radius:1rem; border:none;" value="Preview">
-                                    </form>
+                                 <form method="post" action="./preview/gan_preview.php" enctype="multipart/form-data">
+                                    <input type="file" name="upload">
+                                    <input type="submit" style="background-color:#ffc10794; border-radius:1rem; border:none;" value="Preview">
+                                 </form>
                               </div>
                            </div>
                         </div>
