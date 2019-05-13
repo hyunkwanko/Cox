@@ -1,3 +1,10 @@
+    <!-- Root Directory -->
+    <?php define('ROOT', realpath(__DIR__ . '/../..'));?>
+
+        <!-- Root Directory -->
+        <?php define('ROOT', __DIR__);?>
+
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -146,8 +153,8 @@
                   </div>
                   <div class="single_appartment_content">
                      <a href="" class="love_us"> <span class="ti-heart"></span> </a>
-                     <p>1 Image, 1 Video</p>
-                     <a href="#"><h4 style="text-align: center;">Faceswap</h4></a>
+                     <p>2 Videos</p>
+                     <a href="#"><h4 style="text-align: center;">Deepfake</h4></a>
                   </div>
                </div>
             </div>
@@ -280,10 +287,6 @@
                   <h4>Newsletter</h4>
                   <p>Heaven fruitful doesn't over lesser in days. Appear creeping seasons deve behold bearing days open
                   </p>
-                  <div class="mail_part">
-                     <input type="text" placeholder="Email Address" class="placeholder hide-on-focus">
-                     <a href="" class="email_icon"><i class="far fa-paper-plane"></i></a>
-                  </div>
                </div>
             </div>
          </div>
