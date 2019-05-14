@@ -46,8 +46,8 @@
                         <div class="container">
                            <div class="row">
                               <div class="col-sm-12">
-                                 <button type="button" style="background-color:#ffc10794; border-radius:1rem; border:none;"><a href="./preview/gan_extract.php">얼굴 추출</a></button>&emsp;
-                                 <button type="button" style="background-color:#ffc10794; border-radius:1rem; border:none;"><a href="./gan.php">돌아가기</a></button>
+                                 <button type="button" style="background-color:#ffc10794; border-radius:1rem; border:none;"><a href="<?php ROOT?>/view/gan/view_extract.php">얼굴 추출</a></button>&emsp;
+                                 <button type="button" style="background-color:#ffc10794; border-radius:1rem; border:none;"><a href="<?php ROOT?>/gan.php">돌아가기</a></button>
                               </div>
                            </div>
                         </div>
