@@ -120,7 +120,7 @@
             <div class="row justify-content-center">
                <div class="col-lg-6">
                   <div class="cta_iner">
-                     <h1>Are You Ready For Move? </h1>
+                     <h1>Contact</h1>
                      <p></p>
                   </div>
                </div>

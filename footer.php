@@ -4,36 +4,32 @@
             <div class="col-sm-6 col-lg-3">
                <div class="single_footer_part">
                   <h4>About Us</h4>
-                  <p>Heaven fruitful doesn't over lesser days appear creeping seasons so behold bearing days open</p>
+                  <p>딥러닝을 활용한 얼굴 변환 소프트웨어 개발 LAB</p>
                   <a href="index.html" class="footer_logo"> </a>
                </div>
             </div>
             <div class="col-sm-6 col-lg-3">
                <div class="single_footer_part">
                   <h4>Contact Info</h4>
-                  <p>Address :Your address goes
-                     here, your demo address.</p>
-                  <p>Phone : +8880 44338899</p>
-                  <p>Email : info@colorlib.com</p>
+                  <p>Address : 부산광역시 남구 대연동 430-1 부경대학교대연캠퍼스, 남구 용소로 45(대연동) 부경대학교 누리관 2119호</p>
+                  <p>Phone : +82 010-5517-8007</p>
+                  <p>Email : cjdshrwkd11@gmail.com</p>
                </div>
             </div>
             <div class="col-sm-6 col-lg-3">
                <div class="single_footer_part">
                   <h4>Important Link</h4>
                   <ul class="list-unstyled">
-                     <li><a href="">WHMCS-bridge</a></li>
-                     <li><a href="">Search Domain</a></li>
-                     <li><a href="">My Account</a></li>
-                     <li><a href="">Shopping Cart</a></li>
-                     <li><a href="">Our Shop</a> Our Shop</li>
+                     <li><a href="">Site</a></li>
+                     <li><a href="">Site</a></li>
+                     <li><a href="">Site</a></li>
                   </ul>
                </div>
             </div>
             <div class="col-sm-6 col-lg-3">
                <div class="single_footer_part">
-                  <h4>Newsletter</h4>
-                  <p>Heaven fruitful doesn't over lesser in days. Appear creeping seasons deve behold bearing days open
-                  </p>
+                  <h4>News</h4>
+                  <p>한국멀티미디어학회 5월 저널에 논문 게재</p>
                </div>
             </div>
          </div>
