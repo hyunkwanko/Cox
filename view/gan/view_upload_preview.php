@@ -16,7 +16,7 @@
         <div class="d-inline-block d-xl-block ml-md-0 ml-auto py-3" style="position: relative; top: 3px;">
             <?php 
                 echo "
-                    <a href='$ROOT/pages/gan/page_extract.php?file={$_FILES['upload']['name']}'>
+                    <a href='../../pages/gan/page_extract.php?file={$_FILES['upload']['name']}'>
                         <span class='icon-arrow-right h3'></span>
                     </a>
                 ";

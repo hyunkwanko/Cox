@@ -16,7 +16,7 @@
         <div class="d-inline-block d-xl-block ml-md-0 ml-auto py-3" style="position: relative; top: 3px;">
             <?php 
                 echo "
-                    <a href='$ROOT/gan.php'>
+                    <a href='../../gan.php'>
                         <span class='icon-arrow-right h3'></span>
                     </a>
                 ";
@@ -26,7 +26,7 @@
     
     <div class="swiper-container gallery-top">
         <div class="swiper-wrapper">
-            <video width='100%' height='100%' controls><source src ="<?php ROOT?>/view/gan/18.mp4"></video>
+            <video width='100%' height='100%' controls><source src ="<?php ROOT?>/view/gan/<?php echo $_GET['result'];?>"></video>
         </div>
     </div>
 

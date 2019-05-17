@@ -38,44 +38,44 @@
                <div class="col-md-6 col-lg-3">
                   <div class="single_passion">
                      <div class="single_passion_item">
-                        <a href="<?php ROOT?>/pages/gan/page_conversion.php" class="passion_icon"> <i class="flaticon-compass"></i> </a>
+                        <a href="<?php ROOT?>/pages/gan/page_conversion.php?model=1" class="passion_icon"> <i class="flaticon-compass"></i> </a>
                         <h4>Model 1</h4>
                         <p>Hac facilisi ac vitae consec tetu commod vel magna suspen disse on senectus
                            pharetra magnfauc bed</p>
-                        <a href="<?php ROOT?>/pages/gan/page_conversion.php" class="btn_2">Select <span class="ti-arrow-right"></span></a>
+                        <a href="<?php ROOT?>/pages/gan/page_conversion.php?model=1" class="btn_2">Select <span class="ti-arrow-right"></span></a>
                      </div>
                   </div>
                </div>
                <div class="col-md-6 col-lg-3">
                   <div class="single_passion">
                      <div class="single_passion_item">
-                        <a href="#" class="passion_icon"> <i class="flaticon-desk"></i> </a>
+                        <a href="<?php ROOT?>/pages/gan/page_conversion.php?model=2" class="passion_icon"> <i class="flaticon-desk"></i> </a>
                         <h4>Model 2</h4>
                         <p>Hac facilisi ac vitae consec tetu commod vel magna suspen disse on senectus
                            pharetra magnfauc bed</p>
-                        <a href="#" class="btn_2">Select <span class="ti-arrow-right"></span></a>
+                        <a href="<?php ROOT?>/pages/gan/page_conversion.php?model=2" class="btn_2">Select <span class="ti-arrow-right"></span></a>
                      </div>
                   </div>
                </div>
                <div class="col-md-6 col-lg-3">
                   <div class="single_passion">
                      <div class="single_passion_item">
-                        <a href="#" class="passion_icon"> <i class="flaticon-bathroom"></i> </a>
+                        <a href="<?php ROOT?>/pages/gan/page_conversion.php?model=3" class="passion_icon"> <i class="flaticon-bathroom"></i> </a>
                         <h4>Model 3</h4>
                         <p>Hac facilisi ac vitae consec tetu commod vel magna suspen disse on senectus
                            pharetra magnfauc bed</p>
-                        <a href="#" class="btn_2">Select <span class="ti-arrow-right"></span></a>
+                        <a href="<?php ROOT?>/pages/gan/page_conversion.php?model=3" class="btn_2">Select <span class="ti-arrow-right"></span></a>
                      </div>
                   </div>
                </div>
                <div class="col-md-6 col-lg-3">
                   <div class="single_passion">
                      <div class="single_passion_item">
-                        <a href="#" class="passion_icon"> <i class="flaticon-beach"></i> </a>
+                        <a href="<?php ROOT?>/pages/gan/page_conversion.php?model=4" class="passion_icon"> <i class="flaticon-beach"></i> </a>
                         <h4>Model 4</h4>
                         <p>Hac facilisi ac vitae consec tetu commod vel magna suspen disse on senectus
                            pharetra magnfauc bed</p>
-                        <a href="#" class="btn_2">Select <span class="ti-arrow-right"></span></a>
+                        <a href="<?php ROOT?>/pages/gan/page_conversion.php?model=4" class="btn_2">Select <span class="ti-arrow-right"></span></a>
                      </div>
                   </div>
                </div>
@@ -91,11 +91,11 @@
                <div class="col-md-6 col-lg-3">
                   <div class="single_passion">
                      <div class="single_passion_item">
-                        <a href="#" class="passion_icon"> <i class="flaticon-compass"></i> </a>
+                        <a href="<?php ROOT?>/pages/gan/train_process.php?model=" class="passion_icon"> <i class="flaticon-compass"></i> </a>
                         <h4>Training Model</h4>
                         <p>Hac facilisi ac vitae consec tetu commod vel magna suspen disse on senectus
                            pharetra magnfauc bed</p>
-                        <a href="#" class="btn_2">Train <span class="ti-arrow-right"></span></a>
+                        <a href="<?php ROOT?>/pages/gan/train_process.php?model=" class="btn_2">Train <span class="ti-arrow-right"></span></a>
                      </div>
                   </div>
                </div>
