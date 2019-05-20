@@ -35,71 +35,29 @@
                </div>
             </div>
             <div class="row">
-               <div class="col-md-6 col-lg-3">
-                  <div class="single_passion">
-                     <div class="single_passion_item">
-                        <a href="<?php ROOT?>/pages/gan/page_conversion.php?model=1" class="passion_icon"> <i class="flaticon-compass"></i> </a>
-                        <h4>Model 1</h4>
-                        <p>Hac facilisi ac vitae consec tetu commod vel magna suspen disse on senectus
-                           pharetra magnfauc bed</p>
-                        <a href="<?php ROOT?>/pages/gan/page_conversion.php?model=1" class="btn_2">Select <span class="ti-arrow-right"></span></a>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-6 col-lg-3">
-                  <div class="single_passion">
-                     <div class="single_passion_item">
-                        <a href="<?php ROOT?>/pages/gan/page_conversion.php?model=2" class="passion_icon"> <i class="flaticon-desk"></i> </a>
-                        <h4>Model 2</h4>
-                        <p>Hac facilisi ac vitae consec tetu commod vel magna suspen disse on senectus
-                           pharetra magnfauc bed</p>
-                        <a href="<?php ROOT?>/pages/gan/page_conversion.php?model=2" class="btn_2">Select <span class="ti-arrow-right"></span></a>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-6 col-lg-3">
-                  <div class="single_passion">
-                     <div class="single_passion_item">
-                        <a href="<?php ROOT?>/pages/gan/page_conversion.php?model=3" class="passion_icon"> <i class="flaticon-bathroom"></i> </a>
-                        <h4>Model 3</h4>
-                        <p>Hac facilisi ac vitae consec tetu commod vel magna suspen disse on senectus
-                           pharetra magnfauc bed</p>
-                        <a href="<?php ROOT?>/pages/gan/page_conversion.php?model=3" class="btn_2">Select <span class="ti-arrow-right"></span></a>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-6 col-lg-3">
-                  <div class="single_passion">
-                     <div class="single_passion_item">
-                        <a href="<?php ROOT?>/pages/gan/page_conversion.php?model=4" class="passion_icon"> <i class="flaticon-beach"></i> </a>
-                        <h4>Model 4</h4>
-                        <p>Hac facilisi ac vitae consec tetu commod vel magna suspen disse on senectus
-                           pharetra magnfauc bed</p>
-                        <a href="<?php ROOT?>/pages/gan/page_conversion.php?model=4" class="btn_2">Select <span class="ti-arrow-right"></span></a>
-                     </div>
-                  </div>
-               </div>
-            </div><br><br>
-            <div class="row">
-               <div class="col-lg-5">
-                  <div class="section_tittle">
-                     <h1>Training</h1>
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-md-6 col-lg-3">
-                  <div class="single_passion">
-                     <div class="single_passion_item">
-                        <a href="<?php ROOT?>/pages/gan/train_process.php?model=" class="passion_icon"> <i class="flaticon-compass"></i> </a>
-                        <h4>Training Model</h4>
-                        <p>Hac facilisi ac vitae consec tetu commod vel magna suspen disse on senectus
-                           pharetra magnfauc bed</p>
-                        <a href="<?php ROOT?>/pages/gan/train_process.php?model=" class="btn_2">Train <span class="ti-arrow-right"></span></a>
-                     </div>
-                  </div>
-               </div>
-            </div>
+               <?php
+                  $dir = "/Users/khk/COX";
+                  
+                  if (is_dir($dir)){                              
+                     if ($dh = opendir($dir)){                     
+                        while (($file = readdir($dh)) == true){   
+                           // echo $file . "<br>";
+                           echo "
+                              <div class='col-md-6 col-lg-3'>
+                                 <div class='single_passion'>
+                                    <div class='single_passion_item'>
+                                       <h4>Model 1</h4>
+                                       <p>Hac facilisi ac vitae consec tetu commod vel magna suspen disse on senectus
+                                          pharetra magnfauc bed</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           ";     
+                        }
+                        closedir($dh);                              
+                     }
+                  }
+               ?>
          </div>
       </div>
       <!--::passion_part end::-->
