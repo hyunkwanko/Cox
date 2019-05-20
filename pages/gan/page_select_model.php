@@ -34,30 +34,47 @@
                   </div>
                </div>
             </div>
-            <div class="row">
-               <?php
-                  $dir = "/Users/khk/COX";
-                  
-                  if (is_dir($dir)){                              
-                     if ($dh = opendir($dir)){                     
-                        while (($file = readdir($dh)) == true){   
-                           // echo $file . "<br>";
-                           echo "
-                              <div class='col-md-6 col-lg-3'>
-                                 <div class='single_passion'>
-                                    <div class='single_passion_item'>
-                                       <h4>Model 1</h4>
-                                       <p>Hac facilisi ac vitae consec tetu commod vel magna suspen disse on senectus
-                                          pharetra magnfauc bed</p>
-                                    </div>
+
+            <?php
+               $dir = "/Users/khk/";
+               
+               // Open a directory, and read its contents      
+               if (is_dir($dir)){                              
+                  if ($dh = opendir($dir)){
+                     $i = 0;
+                     while (($file = readdir($dh)) == true){
+                        // echo $file . "<br>";
+                        if ($i == 0)
+                           echo "<div class='row'>";
+
+                        echo "
+                           <div class='col-md-6 col-lg-3'>
+                              <div class='single_passion'>
+                                 <div class='single_passion_item'>
+                                    <a href='$ROOT/pages/gan/train_process.php?model=' class='passion_icon'> <i class='flaticon-compass'></i> </a>
+                                    <h4>Training Model</h4>
+                                    <p>Hac facilisi ac vitae consec tetu commod vel magna suspen disse on senectus
+                                       pharetra magnfauc bed</p>
+                                    <a href='$ROOT/pages/gan/train_process.php?model=' class='btn_2'>Train <span class='ti-arrow-right'></span></a>
                                  </div>
                               </div>
-                           ";     
+                           </div>
+                        ";
+
+                        if ($i == 3){
+                           echo "</div><br><br>";
+                           $i = 0;
+                           continue;
                         }
-                        closedir($dh);                              
+
+                        $i = $i + 1;
                      }
-                  }
-               ?>
+                     if ($i !== 0)
+                        echo "</div><br><br>";
+                     closedir($dh);                              
+                  }                                             
+               }
+            ?>
          </div>
       </div>
       <!--::passion_part end::-->
