@@ -5,7 +5,6 @@
 <html lang="en">
 
     <?php include ROOT."/view/head.php"?>
-
     <body>
     
     <header class="header-bar d-flex d-lg-flex align-items-center" data-aos="fade-down">
@@ -14,7 +13,13 @@
         </div>
       
         <div class="d-inline-block d-xl-block ml-md-0 ml-auto py-3" style="position: relative; top: 3px;">
-            <?php 
+            <?php
+                $file = $_FILES['upload']['name'];
+                $file_ext = strtolower(substr(strrchr($file, "."), 1));
+                $fileNameWithoutExt = substr($file, 0, strrpos($file, "."));
+            
+                if ($_FILES['upload']['type'] == 'video/quicktime')
+                    $_FILES['upload']['name'] = $fileNameWithoutExt.".mp4";
                 echo "
                     <a href='../../pages/gan/page_extract.php?file={$_FILES['upload']['name']}'>
                         <span class='icon-arrow-right h3'></span>
@@ -27,7 +32,7 @@
     <div class="swiper-container gallery-top">
         <div class="swiper-wrapper">
             <?php
-              $uploadfile = './'. $_FILES['upload']['name'];
+                $uploadfile = './'. $_FILES['upload']['name'];
                 if(move_uploaded_file($_FILES['upload']['tmp_name'], $uploadfile)){
                     if($_FILES['upload']['type'] == 'image/jpeg' || $_FILES['upload']['type'] == 'image/png')
                         echo "
@@ -36,7 +41,8 @@
                             </div>
                         ";
                     else if($_FILES['upload']['type'] == 'video/mp4')
-                        echo "<video width='100%' height='100%' controls><source src ={$uploadfile}></video>";
+                        exec("ffmpeg -i {$uploadfile} -vcodec copy ".$fileNameWithoutExt.".mp4");
+                        echo "<video width='50%' height='50%' controls><source src =./".$fileNameWithoutExt.".mp4></video>";
                     } else {
                     echo "File Upload Fail";
                 }
@@ -45,6 +51,5 @@
     </div>
 
     <?php include ROOT."/view/footer.php"?>
-
     </body>
 </html>

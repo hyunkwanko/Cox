@@ -26,7 +26,7 @@
     
     <div class="swiper-container gallery-top">
         <div class="swiper-wrapper">
-            <video width='100%' height='100%' controls><source src ="<?php ROOT?>/view/gan/<?php echo $_GET['result'];?>"></video>
+            <video width='100%' height='100%' controls><source src ="<?php ROOT?>/output/gan/<?php echo $_GET['result'];?>"></video>
         </div>
     </div>
 
