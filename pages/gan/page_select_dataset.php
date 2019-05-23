@@ -53,10 +53,10 @@
                            <div class='col-md-6 col-lg-3'>
                               <div class='single_passion'>
                                  <div class='single_passion_item'>
-                                    <a href='./train_process.php?file=".$_GET['file']."&dataset=".$file."' class='passion_icon'> <i class='flaticon-compass'></i> </a>
+                                    <a href='./page_training.php?file=".$_GET['file']."&dataset=".$file."' class='passion_icon'> <i class='flaticon-compass'></i> </a>
                                     <h4>$file</h4>
                                     <p>Hac facilisi ac vitae consec tetu commod vel magna suspen disse on senectus</p>
-                                    <a href='./train_process.php?file=".$_GET['file']."&dataset=".$file."' class='btn_2'>Select <span class='ti-arrow-right'></span></a>
+                                    <a href='./page_training.php?file=".$_GET['file']."&dataset=".$file."' class='btn_2'>Select <span class='ti-arrow-right'></span></a>
                                  </div>
                               </div>
                            </div>

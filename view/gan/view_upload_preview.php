@@ -31,22 +31,27 @@
     
     <div class="swiper-container gallery-top">
         <div class="swiper-wrapper">
-            <?php
-                $uploadfile = './'. $_FILES['upload']['name'];
-                if(move_uploaded_file($_FILES['upload']['tmp_name'], $uploadfile)){
-                    if($_FILES['upload']['type'] == 'image/jpeg' || $_FILES['upload']['type'] == 'image/png')
-                        echo "
-                            <div class='swiper-slide cover' style='background-image: url({$uploadfile});'>
-                                <a href={$uploadfile} data-fancybox='gallery' class='zoom'><span class='fas fa-search'></span></a>
-                            </div>
-                        ";
-                    else if($_FILES['upload']['type'] == 'video/mp4')
-                        exec("ffmpeg -i {$uploadfile} -vcodec copy ".$fileNameWithoutExt.".mp4");
-                        echo "<video width='50%' height='50%' controls><source src =./".$fileNameWithoutExt.".mp4></video>";
-                    } else {
-                    echo "File Upload Fail";
-                }
-            ?>
+            <div class="container" style="padding: 100px 0">
+                <?php
+                    $uploadfile = './'. $_FILES['upload']['name'];
+                    if(move_uploaded_file($_FILES['upload']['tmp_name'], $uploadfile)){
+                        if($_FILES['upload']['type'] == 'image/jpeg' || $_FILES['upload']['type'] == 'image/png'){
+                            echo "
+                                <div class='swiper-slide cover' style='background-image: url({$uploadfile});'>
+                                    <a href={$uploadfile} data-fancybox='gallery' class='zoom'><span class='fas fa-search'></span></a>
+                                </div>
+                            ";
+                        } else if($_FILES['upload']['type'] == 'video/quicktime'){
+                            exec("ffmpeg -i {$uploadfile} -vcodec copy ".$fileNameWithoutExt.".mp4");
+                            echo "<video width='100%' height='100%' controls><source src =./".$fileNameWithoutExt.".mp4></video>";
+                        } else if($_FILES['upload']['type'] == 'video/mp4'){
+                            echo "<video width='100%' height='100%' controls><source src =./".$fileNameWithoutExt.".mp4></video>";
+                        } else {
+                            echo "File Upload Fail";
+                        }
+                    }
+                ?>
+            </div>
         </div>
     </div>
 

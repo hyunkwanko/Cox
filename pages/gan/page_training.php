@@ -46,8 +46,28 @@
                         <div class="container">
                            <div class="row">
                               <div class="col-sm-12">
-                                 <button type="button" style="background-color:#ffc10794; border-radius:1rem; border:none;"><a href="<?php ROOT?>/pages/gan/conversion_new_process.php?file=<?php echo $_GET['file'];?>&model=<?php echo $_GET['model'];?>">얼굴 합성</a></button>&emsp;
-                                 <button type="button" style="background-color:#ffc10794; border-radius:1rem; border:none;"><a href="<?php ROOT?>/gan.php">돌아가기</a></button>
+                                 <form method="get" action="<?php ROOT?>/pages/gan/train_process.php">
+                                    <div class="form-group">
+                                       <label for="file" style="margin-right:15px">Input Video:</label>
+                                       <input type="text" class="form-control" style="width:30%; display:inline; border:none;"name="file" aria-describedby="emailHelp" placeholder="<?php echo $_GET['file'];?>" value="<?php echo $_GET['file'];?>">
+                                       <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                                    </div>
+                                    <div class="form-group">
+                                       <label for="dataset" style="margin-right:15px">Dataset:</label>
+                                       <input type="text" class="form-control" style="width:30%; display:inline; border:none;" name="dataset" placeholder="<?php echo $_GET['dataset'];?>" value="<?php echo $_GET['dataset'];?>">
+                                    </div>
+                                    <div class="form-group">
+                                       <label for="count" style="margin-right:15px">반복 횟수</label>
+                                       <select class="form-control" style="width:30%; display:inline;" name="count">
+                                          <option>10</option>
+                                          <option>10000</option>
+                                          <option>20000</option>
+                                          <option>40000</option>
+                                          <option>80000</option>
+                                       </select>
+                                    </div>
+                                    <button type="submit" style="background-color:#ffc10794; border-radius:1rem; border:none;">트레이닝</button>
+                                 </form>
                               </div>
                            </div>
                         </div>

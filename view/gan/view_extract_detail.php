@@ -31,7 +31,7 @@
             <div class="row align-items-stretch">
 
                 <?php
-                    $dir = "C:/Apache24/htdocs/datasets/gan/{$fileNameWithoutExt}";
+                    $dir = "C:/Apache24/htdocs/datasets/gan/{$fileNameWithoutExt}/_eyes";
                     
                     // Open a directory, and read its contents      
                     if (is_dir($dir)){                              
@@ -45,8 +45,8 @@
                                 
                                 echo "
                                     <div class='col-6 col-md-6 col-lg-4' data-aos='fade-up'>
-                                        <a href='../../datasets/gan/{$fileNameWithoutExt}_eyes/{$file}' class='d-block photo-item' data-fancybox='gallery'>
-                                            <img src='../../datasets/gan/{$fileNameWithoutExt}_eyes/{$file}' alt='Image' class='img-fluid'>
+                                        <a href='../../datasets/gan/{$fileNameWithoutExt}/_eyes/{$file}' class='d-block photo-item' data-fancybox='gallery'>
+                                            <img src='../../datasets/gan/{$fileNameWithoutExt}/_eyes/{$file}' alt='Image' class='img-fluid'>
                                             <div class='photo-text-more'>
                                                 <span class='icon icon-search'></span>
                                             </div>
@@ -54,7 +54,7 @@
                                     </div>
                                 ";
 
-                                if ($i == 6)
+                                if ($i == 20) // Max Image
                                     break;
                                 $i = $i + 1;
                             }

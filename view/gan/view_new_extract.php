@@ -15,7 +15,7 @@
         <div class="d-inline-block d-xl-block ml-md-0 ml-auto py-3" style="position: relative; top: 3px;">
             <?php 
                 echo "
-                    <a href='../../pages/gan/train_new_process.php?file={$_GET['file']}&file1={$_GET['file1']}'>
+                    <a href='../../pages/gan/page_new_extract_detail.php?file={$_GET['file']}&file1={$_GET['file1']}'>
                         <span class='icon-arrow-right h3'></span>
                     </a>
                 ";
@@ -54,7 +54,7 @@
                                     </div>
                                 ";
 
-                                if ($i == 6)
+                                if ($i == 20) // Max Image
                                     break;
                                 $i = $i + 1;
                             }

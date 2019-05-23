@@ -15,8 +15,11 @@
 
         $dataset_dir = 'C:/Apache24/htdocs/datasets/gan/'.$_GET['dataset'];
         echo $dataset_dir . "<br>";
-     
-        // exec("conda activate faceswap && cd C:/Users/kyu/Desktop/gan_repack/ && python train.py $extract_images_dir $models_save_dir $dataset_dir 40000");
+
+        $iterations = $_GET['count'];
+        echo $iterations . "<br>";
+
+        exec("conda activate faceswap && cd C:/Users/kyu/Desktop/gan_repack/ && python train.py $extract_images_dir $models_save_dir $dataset_dir $iterations");
     }
     
     train_process();

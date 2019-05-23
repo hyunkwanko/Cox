@@ -15,13 +15,13 @@
         <div class="d-inline-block d-xl-block ml-md-0 ml-auto py-3" style="position: relative; top: 3px;">
             <?php 
                 echo "
-                    <a href='../../pages/gan/page_extract_detail.php?file=".$_GET['file']."'>
+                    <a href='../../pages/gan/page_new_training.php?file={$_GET['file']}&file1={$_GET['file1']}'>
                         <span class='icon-arrow-right h3'></span>
                     </a>
                 ";
-                $file = $_GET['file'];
+                $file = $_GET['file1'];
                 $file_ext = strtolower(substr(strrchr($file, "."), 1));
-                $fileNameWithoutExt = substr($file, 0, strrpos($file, "."));        
+                $fileNameWithoutExt = substr($file, 0, strrpos($file, "."));
             ?>
         </div>
     </header> 
@@ -31,10 +31,10 @@
             <div class="row align-items-stretch">
 
                 <?php
-                    $dir = "C:/Apache24/htdocs/datasets/gan/{$fileNameWithoutExt}";
+                    $dir = "C:/Apache24/htdocs/datasets/gan/{$fileNameWithoutExt}/_eyes";
                     
-                    // Open a directory, and read its contents      
-                    if (is_dir($dir)){                              
+                    // Open a directory, and read its contents
+                    if (is_dir($dir)){
                         if ($dh = opendir($dir)){
                             $i = 1;
                             while (($file = readdir($dh)) == true){
@@ -45,8 +45,8 @@
                                 
                                 echo "
                                     <div class='col-6 col-md-6 col-lg-4' data-aos='fade-up'>
-                                        <a href='../../datasets/gan/{$fileNameWithoutExt}/{$file}' class='d-block photo-item' data-fancybox='gallery'>
-                                            <img src='../../datasets/gan/{$fileNameWithoutExt}/{$file}' alt='Image' class='img-fluid'>
+                                        <a href='../../datasets/gan/{$fileNameWithoutExt}/_eyes/{$file}' class='d-block photo-item' data-fancybox='gallery'>
+                                            <img src='../../datasets/gan/{$fileNameWithoutExt}/_eyes/{$file}' alt='Image' class='img-fluid'>
                                             <div class='photo-text-more'>
                                                 <span class='icon icon-search'></span>
                                             </div>
