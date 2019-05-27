@@ -19,7 +19,7 @@
         $iterations = $_GET['count'];
         echo $iterations . "<br>";
 
-        exec("conda activate faceswap && cd C:/Users/kyu/Desktop/gan_repack/ && python train.py $extract_images_dir $models_save_dir $dataset_dir $iterations");
+        // exec("conda activate faceswap && cd C:/Users/kyu/Desktop/gan_repack/ && python train.py $extract_images_dir $models_save_dir $dataset_dir $iterations");
     }
     
     train_process();

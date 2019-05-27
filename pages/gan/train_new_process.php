@@ -26,7 +26,7 @@
         $iterations = $_GET['count'];
         echo $iterations . "<br>";
      
-        exec("conda activate faceswap && cd C:/Users/kyu/Desktop/gan_repack/ && python train.py $extract_images_1_dir $models_save_dir $extract_images_2_dir $iterations");
+        // exec("conda activate faceswap && cd C:/Users/kyu/Desktop/gan_repack/ && python train.py $extract_images_1_dir $models_save_dir $extract_images_2_dir $iterations");
 
         echo "<script> document.location.href='./page_new_conversion.php?file={$_GET['file']}&file1={$_GET['file1']}&model={$new_model_dir_name}'; </script>"; // Redirection
     }

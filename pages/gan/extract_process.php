@@ -13,7 +13,7 @@
         $output_path = 'C:/Apache24/htdocs/datasets/gan/'.$fileNameWithoutExt;
         // echo $output_path;
      
-        exec("conda activate faceswap && cd C:/Users/kyu/Desktop/gan_repack/ && python extract.py $video_path $output_path");
+        // exec("conda activate faceswap && cd C:/Users/kyu/Desktop/gan_repack/ && python extract.py $video_path $output_path");
     }
     
     extract_process();

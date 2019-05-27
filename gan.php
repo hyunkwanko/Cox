@@ -30,7 +30,7 @@
       <div class="blog_part">
          <div class="container">
             <div class="row">
-               <div class="col-sm-8 col-lg-5">
+               <div class="col-sm-8 col-lg-9">
                   <div class="section_tittle">
                      <h1>Generative Adversarial Network</h1>
                   </div>
@@ -40,7 +40,7 @@
                <div class="col-md-6 col-lg-7">
                   <div class="single_blog">
                      <div class="appartment_img">
-                        <img src="<?php ROOT?>/static/img/blog_1.png" alt="">
+                        <img src="<?php ROOT?>/static/img/summer_blog_b.jpg" alt="">
                      </div>
                      <div class="single_appartment_content">
                         <div class="contents" style="text-align:center;">
@@ -58,43 +58,9 @@
                      </div>
                   </div>
                </div>
-               <div class="col-md-6 col-lg-5">
-                  <div class="right_single_blog">
-                     <div class="single_blog">
-                        <div class="media">
-                           <img src="<?php ROOT?>/static/img/blog_2.png" class=" mr-3" alt="...">
-                           <div class="media-body align-self-center">
-                              <p><a href="#">ITEM</a></p>
-                              <a href="#">
-                                 <h5 class="mt-0">Green very from for rule stars seasons</h5>
-                              </a>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="single_blog">
-                        <div class="media">
-                           <img src="<?php ROOT?>/static/img/blog_3.png" class="mr-3" alt="...">
-                           <div class="media-body align-self-center">
-                              <p><a href="#">ITEM</a></p>
-                              <a href="#">
-                                 <h5 class="mt-0">Moveth wherein subdue of brought</h5>
-                              </a>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="single_blog">
-                        <div class="media">
-                           <img src="<?php ROOT?>/static/img/blog_4.png" class="mr-3" alt="...">
-                           <div class="media-body align-self-center">
-                              <p><a href="#">ITEM</a></p>
-                              <a href="#">
-                                 <h5 class="mt-0">Firmament heaven cant him night rule</h5>
-                              </a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+
+               <?php include ROOT."/pages/gan/blog_sidebar.php"?>
+
             </div>
          </div>
       </div>

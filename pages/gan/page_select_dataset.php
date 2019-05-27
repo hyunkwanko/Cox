@@ -48,19 +48,58 @@
                         
                         if ($i == 0)
                            echo "<div class='row'>";
-
-                        echo "
-                           <div class='col-md-6 col-lg-3'>
-                              <div class='single_passion'>
-                                 <div class='single_passion_item'>
-                                    <a href='./page_training.php?file=".$_GET['file']."&dataset=".$file."' class='passion_icon'> <i class='flaticon-compass'></i> </a>
-                                    <h4>$file</h4>
-                                    <p>Hac facilisi ac vitae consec tetu commod vel magna suspen disse on senectus</p>
-                                    <a href='./page_training.php?file=".$_GET['file']."&dataset=".$file."' class='btn_2'>Select <span class='ti-arrow-right'></span></a>
+                        
+                        if ($i == 0)
+                           echo "
+                              <div class='col-md-6 col-lg-3'>
+                                 <div class='single_passion'>
+                                    <div class='single_passion_item'>
+                                       <a href='./page_training.php?file=".$_GET['file']."&dataset=".$file."' class='passion_icon'> <i class='flaticon-compass'></i> </a>
+                                       <h4>$file</h4>
+                                       <a href='./page_training.php?file=".$_GET['file']."&dataset=".$file."' class='btn_2'>Select <span class='ti-arrow-right'></span></a>
+                                    </div>
                                  </div>
                               </div>
-                           </div>
-                        ";
+                           ";
+                        
+                        if ($i == 1)
+                           echo "
+                              <div class='col-md-6 col-lg-3'>
+                                 <div class='single_passion'>
+                                    <div class='single_passion_item'>
+                                       <a href='./page_training.php?file=".$_GET['file']."&dataset=".$file."' class='passion_icon'> <i class='flaticon-desk'></i> </a>
+                                       <h4>$file</h4>
+                                       <a href='./page_training.php?file=".$_GET['file']."&dataset=".$file."' class='btn_2'>Select <span class='ti-arrow-right'></span></a>
+                                    </div>
+                                 </div>
+                              </div>
+                           ";
+
+                        if ($i == 2)
+                           echo "
+                              <div class='col-md-6 col-lg-3'>
+                                 <div class='single_passion'>
+                                    <div class='single_passion_item'>
+                                       <a href='./page_training.php?file=".$_GET['file']."&dataset=".$file."' class='passion_icon'> <i class='flaticon-bathroom'></i> </a>
+                                       <h4>$file</h4>
+                                       <a href='./page_training.php?file=".$_GET['file']."&dataset=".$file."' class='btn_2'>Select <span class='ti-arrow-right'></span></a>
+                                    </div>
+                                 </div>
+                              </div>
+                           ";
+
+                        if ($i == 3)
+                           echo "
+                              <div class='col-md-6 col-lg-3'>
+                                 <div class='single_passion'>
+                                    <div class='single_passion_item'>
+                                       <a href='./page_training.php?file=".$_GET['file']."&dataset=".$file."' class='passion_icon'> <i class='flaticon-beach'></i> </a>
+                                       <h4>$file</h4>
+                                       <a href='./page_training.php?file=".$_GET['file']."&dataset=".$file."' class='btn_2'>Select <span class='ti-arrow-right'></span></a>
+                                    </div>
+                                 </div>
+                              </div>
+                           ";
 
                         if ($i == 3){
                            echo "</div><br><br>";
@@ -77,7 +116,7 @@
             ?>
 
             <div class="row">
-               <div class="col-lg-5">
+               <div class="col-lg-7">
                   <div class="section_tittle">
                      <h1>Training with your Video</h1>
                   </div>
@@ -87,9 +126,8 @@
                <div class="col-md-6 col-lg-3">
                   <div class="single_passion">
                      <div class="single_passion_item">
-                        <a href="<?php ROOT?>/pages/gan/page_new_input.php?file=<?php echo $_GET['file'];?>" class="passion_icon"> <i class="flaticon-compass"></i> </a>
-                        <h4>Training Model</h4>
-                        <p>Hac facilisi ac vitae consec tetu commod vel magna suspen disse on senectus</p>
+                        <a href="<?php ROOT?>/pages/gan/page_new_input.php?file=<?php echo $_GET['file'];?>" class="passion_icon"> <i class="flaticon-desk"></i> </a>
+                        <h4>Create Model</h4>
                         <a href="<?php ROOT?>/pages/gan/page_new_input.php?file=<?php echo $_GET['file'];?>" class="btn_2">Train <span class="ti-arrow-right"></span></a>
                      </div>
                   </div>

@@ -4,7 +4,7 @@
             <div class="col-sm-6 col-lg-3">
                <div class="single_footer_part">
                   <h4>About Us</h4>
-                  <p>딥러닝을 활용한 얼굴 변환 소프트웨어 개발 LAB</p>
+                  <p>Faceswap R&D Lab</p>
                   <a href="index.html" class="footer_logo"> </a>
                </div>
             </div>
@@ -20,16 +20,16 @@
                <div class="single_footer_part">
                   <h4>Important Link</h4>
                   <ul class="list-unstyled">
-                     <li><a href="">Site</a></li>
-                     <li><a href="">Site</a></li>
-                     <li><a href="">Site</a></li>
+                     <li><a href="https://github.com/hyunkwanko">HyunKwan</a></li>
+                     <li><a href="https://github.com/Hobeam">HoBeom</a></li>
+                     <li><a href="https://github.com/swanilee">SeonGyeong</a></li>
                   </ul>
                </div>
             </div>
             <div class="col-sm-6 col-lg-3">
                <div class="single_footer_part">
                   <h4>News</h4>
-                  <p>한국멀티미디어학회 5월 저널에 논문 게재</p>
+                  <p>한국멀티미디어학회 5월 논문지 게재</p>
                </div>
             </div>
          </div>

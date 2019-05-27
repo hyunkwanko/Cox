@@ -12,7 +12,7 @@
         $output_dir = 'C:/Apache24/htdocs/output/gan/output_'.$_GET['file'];
         // echo $output_dir;
      
-        exec("conda activate faceswap && cd C:/Users/kyu/Desktop/gan_repack/ && python conversion.py $video_dir $model_dir $output_dir");
+        // exec("conda activate faceswap && cd C:/Users/kyu/Desktop/gan_repack/ && python conversion.py $video_dir $model_dir $output_dir");
     }
     
     model_process();
