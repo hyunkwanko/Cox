@@ -17,7 +17,7 @@
                <div class="col-lg-12">
                   <div class="breadcrumb_iner">
                      <div class="breadcrumb_iner_item">
-                        <h2>Zad</h2>
+                        <h2>Deepfake</h2>
                      </div>
                   </div>
                </div>
@@ -32,7 +32,7 @@
             <div class="row">
                <div class="col-sm-8 col-lg-9">
                   <div class="section_tittle">
-                     <h1>Zad</h1>
+                     <h1>Deepfake</h1>
                   </div>
                </div>
             </div>
@@ -40,32 +40,27 @@
                <div class="col-md-6 col-lg-7">
                   <div class="single_blog">
                      <div class="appartment_img">
-                        <img src="<?php ROOT?>/static/img/spring_blog_b.jpg" alt="">
+                        <img src="<?php ROOT?>/static/img/autumn_blog_b.jpg" alt="">
                      </div>
                      <div class="single_appartment_content">
                         <div class="contents" style="text-align:center;">
-                           <div class="container">
-                              <div class="row">
-                                 <div class="col-sm-12">
-                                    video 입력
-                                 </div>
-                              </div>
-
-                              <div class="row">
-                                 <div class="col-sm-12">
-                                    <form method="post" action="<?php ROOT?>/view/zad/view_upload_video_preview.php?image=<?php echo $_GET['image']?>" enctype="multipart/form-data">
-                                       <input type="file" name="upload">
-                                       <input type="submit" style="background-color:#ffc10794; border-radius:1rem; border:none;" value="Preview">
-                                    </form>
-                                 </div>
-                              </div>
-                           </div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div>첫번째 영상: <?php echo $_GET['file'];?></div><br>
+                                        <form method="post" action="<?php ROOT?>/view/deepfake/view_new_upload_preview.php?file=<?php echo $_GET['file'];?>" enctype="multipart/form-data">
+                                            <input type="file" name="upload">
+                                            <input type="submit" style="background-color:#ffc10794; border-radius:1rem; border:none;" value="Preview">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                      </div>
                   </div>
                </div>
-
-               <?php include ROOT."/pages/zad/blog_sidebar.php"?>
+               
+               <?php include ROOT."/pages/deepfake/blog_sidebar.php"?>
 
             </div>
          </div>

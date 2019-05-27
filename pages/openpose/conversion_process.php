@@ -23,14 +23,14 @@
         $output_dir = 'C:/Apache24/htdocs/output/openpose/'.$output_file;
         // echo $output_dir . "<br>";
      
-        exec("conda activate posefaceswap && cd C:/Users/kyu/Desktop/openpose/ && python openpose_face.py $image_dir $video_dir $output_dir");
+        // exec("conda activate posefaceswap && cd C:/Users/kyu/Desktop/openpose/ && python openpose_face.py $image_dir $video_dir $output_dir");
         
         $change_file_dir = 'C:/Apache24/htdocs/output/openpose/result_'.$output_file;
 
         // echo $change_file_dir;
-        exec("ffmpeg -i $output_dir -c:v libx264 -preset slow -crf 22 -c:a copy $change_file_dir");
+        // exec("ffmpeg -i $output_dir -c:v libx264 -preset slow -crf 22 -c:a copy $change_file_dir");
 
-        echo "<script> document.location.href='../../view/openpose/view_result.php?result={$output_file}'; </script>"; // Redirection
+        // echo "<script> document.location.href='../../view/openpose/view_result.php?result={$output_file}'; </script>"; // Redirection
     }
     
     model_process();

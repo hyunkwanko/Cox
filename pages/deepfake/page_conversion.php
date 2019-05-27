@@ -31,7 +31,7 @@
          <div class="row">
             <div class="col-sm-8 col-lg-9">
                <div class="section_tittle">
-                  <h1>Generative Adversarial Network</h1>
+                  <h1>Deepfake</h1>
                </div>
             </div>
          </div>

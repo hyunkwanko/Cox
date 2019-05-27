@@ -29,14 +29,14 @@
         $output_dir = 'C:/Apache24/htdocs/output/zad/'.$output_file;
         echo $output_dir . "<br>";
      
-        exec("cd C:/Users/kyu/Desktop/zad/ && C:/Users/kyu/Desktop/zad/venv/Scripts/python zad_main.py $video_dir $image_dir $face_landmarks $candide $output_dir");
+        // exec("cd C:/Users/kyu/Desktop/zad/ && C:/Users/kyu/Desktop/zad/venv/Scripts/python zad_main.py $video_dir $image_dir $face_landmarks $candide $output_dir");
         
         $change_file_dir = 'C:/Apache24/htdocs/output/zad/result_'.$output_file;
 
         echo $change_file_dir;
-        exec("ffmpeg -i $output_dir -c:v libx264 -preset slow -crf 22 -c:a copy $change_file_dir");
+        // exec("ffmpeg -i $output_dir -c:v libx264 -preset slow -crf 22 -c:a copy $change_file_dir");
 
-        echo "<script> document.location.href='../../view/zad/view_result.php?result={$output_file}'; </script>"; // Redirection
+        // echo "<script> document.location.href='../../view/zad/view_result.php?result={$output_file}'; </script>"; // Redirection
     }
     
     model_process();

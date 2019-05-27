@@ -46,15 +46,15 @@
                         <div class="container">
                            <div class="row">
                               <div class="col-sm-12">
-                                 <form method="get" action="<?php ROOT?>/pages/deepfake/train_process.php">
+                                 <form method="get" action="<?php ROOT?>/pages/deepfake/train_new_process.php">
                                     <div class="form-group">
-                                       <label for="file" style="margin-right:15px">Input Video:</label>
+                                       <label for="file" style="margin-right:15px">Input Video 1 :</label>
                                        <input type="text" class="form-control" style="width:30%; display:inline; border:none;"name="file" aria-describedby="emailHelp" placeholder="<?php echo $_GET['file'];?>" value="<?php echo $_GET['file'];?>">
                                        <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                                     </div>
                                     <div class="form-group">
-                                       <label for="dataset" style="margin-right:15px">Dataset:</label>
-                                       <input type="text" class="form-control" style="width:30%; display:inline; border:none;" name="dataset" placeholder="<?php echo $_GET['dataset'];?>" value="<?php echo $_GET['dataset'];?>">
+                                       <label for="dataset" style="margin-right:15px">Input Video 2 :</label>
+                                       <input type="text" class="form-control" style="width:30%; display:inline; border:none;" name="file1" placeholder="<?php echo $_GET['file1'];?>" value="<?php echo $_GET['file1'];?>">
                                     </div>
                                     <div class="form-group">
                                        <label for="count" style="margin-right:15px">반복 횟수</label>

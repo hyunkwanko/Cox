@@ -56,7 +56,6 @@
                                     <div class='single_passion_item'>
                                        <a href='./page_conversion.php?file=".$_GET['file']."&model=".$file."' class='passion_icon'> <i class='flaticon-compass'></i> </a>
                                        <h4>$file</h4>
-                                       <p>Hac facilisi ac vitae consec tetu commod vel magna suspen disse on senectus</p>
                                        <a href='./page_conversion.php?file=".$_GET['file']."&model=".$file."' class='btn_2'>Select <span class='ti-arrow-right'></span></a>
                                     </div>
                                  </div>
@@ -69,7 +68,6 @@
                                  <div class='single_passion_item'>
                                     <a href='./page_conversion.php?file=".$_GET['file']."&model=".$file."' class='passion_icon'> <i class='flaticon-desk'></i> </a>
                                     <h4>$file</h4>
-                                    <p>Hac facilisi ac vitae consec tetu commod vel magna suspen disse on senectus</p>
                                     <a href='./page_conversion.php?file=".$_GET['file']."&model=".$file."' class='btn_2'>Select <span class='ti-arrow-right'></span></a>
                                  </div>
                               </div>
@@ -82,7 +80,6 @@
                                  <div class='single_passion_item'>
                                     <a href='./page_conversion.php?file=".$_GET['file']."&model=".$file."' class='passion_icon'> <i class='flaticon-bathroom'></i> </a>
                                     <h4>$file</h4>
-                                    <p>Hac facilisi ac vitae consec tetu commod vel magna suspen disse on senectus</p>
                                     <a href='./page_conversion.php?file=".$_GET['file']."&model=".$file."' class='btn_2'>Select <span class='ti-arrow-right'></span></a>
                                  </div>
                               </div>
@@ -95,7 +92,6 @@
                                  <div class='single_passion_item'>
                                     <a href='./page_conversion.php?file=".$_GET['file']."&model=".$file."' class='passion_icon'> <i class='flaticon-beach'></i> </a>
                                     <h4>$file</h4>
-                                    <p>Hac facilisi ac vitae consec tetu commod vel magna suspen disse on senectus</p>
                                     <a href='./page_conversion.php?file=".$_GET['file']."&model=".$file."' class='btn_2'>Select <span class='ti-arrow-right'></span></a>
                                  </div>
                               </div>

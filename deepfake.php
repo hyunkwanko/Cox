@@ -17,7 +17,7 @@
                <div class="col-lg-12">
                   <div class="breadcrumb_iner">
                      <div class="breadcrumb_iner_item">
-                        <h2>GAN</h2>
+                        <h2>Deepfake</h2>
                      </div>
                   </div>
                </div>
