@@ -45,12 +45,10 @@
                      <div class="single_appartment_content">
                         <div class="contents" style="text-align:center;">
                            <div class="container">
-                              <div class="row">
-                                 <div class="col-sm-12">
-                                    video 입력
-                                 </div>
-                              </div>
+                              <b>Select Video</b>
+                           </div><br>
 
+                           <div class="container">
                               <div class="row">
                                  <div class="col-sm-12">
                                     <form method="post" action="<?php ROOT?>/view/openpose/view_upload_video_preview.php?image=<?php echo $_GET['image']?>" enctype="multipart/form-data">

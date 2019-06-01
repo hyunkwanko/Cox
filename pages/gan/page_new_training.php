@@ -48,16 +48,16 @@
                               <div class="col-sm-12">
                                  <form method="get" action="<?php ROOT?>/pages/gan/train_new_process.php">
                                     <div class="form-group">
-                                       <label for="file" style="margin-right:15px">Input Video 1 :</label>
+                                       <label for="file" style="margin-right:15px"><b>Input Video 1 :</b></label>
                                        <input type="text" class="form-control" style="width:30%; display:inline; border:none;"name="file" aria-describedby="emailHelp" placeholder="<?php echo $_GET['file'];?>" value="<?php echo $_GET['file'];?>">
                                        <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                                     </div>
                                     <div class="form-group">
-                                       <label for="dataset" style="margin-right:15px">Input Video 2 :</label>
+                                       <label for="dataset" style="margin-right:15px"><b>Input Video 2 :</b></label>
                                        <input type="text" class="form-control" style="width:30%; display:inline; border:none;" name="file1" placeholder="<?php echo $_GET['file1'];?>" value="<?php echo $_GET['file1'];?>">
                                     </div>
                                     <div class="form-group">
-                                       <label for="count" style="margin-right:15px">반복 횟수</label>
+                                       <label for="count" style="margin-right:15px"><b>Iterations</b></label>
                                        <select class="form-control" style="width:30%; display:inline;" name="count">
                                           <option>10</option>
                                           <option>10000</option>
@@ -66,7 +66,7 @@
                                           <option>80000</option>
                                        </select>
                                     </div>
-                                    <button type="submit" style="background-color:#ffc10794; border-radius:1rem; border:none;">트레이닝</button>
+                                    <button type="submit" style="background-color:#ffc10794; border-radius:1rem; border:none;"><b>Train</b></button>
                                  </form>
                               </div>
                            </div>

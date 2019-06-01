@@ -53,7 +53,7 @@
                         <img src="<?php ROOT?>/static/img/spring.jpg" alt="">
                         <div class="single_appartment_text">
                            <h3>Zad</h3>
-                           <p><i class="fas fa-apple-alt"></i> 정면 사진에 대한 변환인 2D-Faceswap 알고리즘을 적용하여 웹에서 실시간으로 사용자에게 얼굴을 합성한 결과를 보여줍니다.</p><br>
+                           <p><i class="fas fa-apple-alt"></i> 정면 사진에 대한 변환인 3-D Faceswap 알고리즘을 적용하여 웹에서 실시간으로 사용자에게 얼굴을 합성한 결과를 보여줍니다.</p><br>
                         </div>
                      </div>
                      <div class="single_appartment_content">
@@ -69,7 +69,7 @@
                         <img src="<?php ROOT?>/static/img/winter.jpg" alt="">
                         <div class="single_appartment_text">
                            <h3>Openpose</h3>
-                           <p><i class="fas fa-apple-alt"></i> 2D-Faceswap의 경우 영상에서 얼굴이 여러명이 나올 경우 여러명의 얼굴이 동시에 변환된다는 단점을 Openpose를 활용하여 특정 인물의 얼굴만 변환합니다.</p><br>
+                           <p><i class="fas fa-apple-alt"></i> 3-D Faceswap 알고리즘으로 얼굴이 잘 검출되지 않는 동영상에 대해서도 Openpose를 활용하여 몸을 이용해 얼굴을 검출하여 결과를 보여줍니다.</p><br>
                         </div>
                      </div>
                      <div class="single_appartment_content">

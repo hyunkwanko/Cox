@@ -45,6 +45,10 @@
                      <div class="single_appartment_content">
                         <div class="contents" style="text-align:center;">
                            <div class="container">
+                              <b>Select Video</b>
+                           </div><br>
+
+                           <div class="container">
                               <div class="row">
                                  <div class="col-sm-12">
                                     <form method="post" action="<?php ROOT?>/view/gan/view_upload_preview.php" enctype="multipart/form-data">

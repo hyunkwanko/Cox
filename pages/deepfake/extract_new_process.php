@@ -15,7 +15,7 @@
         $output_path = 'C:/Apache24/htdocs/datasets/deepfake/'.$fileNameWithoutExt;
         // echo $output_path;
      
-        // exec("conda activate deep && cd C:/Users/kyu/Desktop/deepfake/ && python faceswap.py extract -i $video_path -o $output_path");
+        exec("conda activate deep && cd C:/Users/kyu/Desktop/deepfake/ && python faceswap.py extract -i $video_path -o $output_path");
     }
     
     extract_process();

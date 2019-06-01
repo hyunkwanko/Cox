@@ -2,9 +2,6 @@
     define('ROOT', realpath(__DIR__ . '/../..'));
     ini_set('max_execution_time', 30000); // Web execution time extends 30s -> 30000s
 
-    // python faceswap.py convert -i ./ko.mp4 -o ./output/ -m ./ko_ho_model
-    // ffmpeg -i ./output/ko_%06d.png -c:v libx264 -vf "fps=25,format=yuv420p" ./output.mp4
-
     function model_process(){
         $file = $_GET['file'];
         $file_ext = strtolower(substr(strrchr($file, "."), 1));

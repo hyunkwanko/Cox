@@ -46,9 +46,9 @@
                         <div class="container">
                            <div class="row">
                               <div class="col-sm-12">
-                                 <button type="button" style="background-color:#ffc10794; border-radius:1rem; border:none;"><a href="<?php ROOT?>/pages/deepfake/extract_process.php?file=<?php echo $_GET['file'];?>">얼굴 추출</a></button>&emsp;
-                                 <button type="button" style="background-color:#ffc10794; border-radius:1rem; border:none;"><a href="<?php ROOT?>/pages/deepfake/page_select_model.php?file=<?php echo $_GET['file'];?>">얼굴 합성</a></button>&emsp;
-                                 <button type="button" style="background-color:#ffc10794; border-radius:1rem; border:none;"><a href="<?php ROOT?>/deepfake.php">돌아가기</a></button>
+                                 <button type="button" style="background-color:#ffc10794; border-radius:1rem; border:none;"><a href="<?php ROOT?>/pages/deepfake/extract_process.php?file=<?php echo $_GET['file'];?>"><b>Extract</b></a></button>&emsp;
+                                 <button type="button" style="background-color:#ffc10794; border-radius:1rem; border:none;"><a href="<?php ROOT?>/pages/deepfake/page_select_model.php?file=<?php echo $_GET['file'];?>"><b>Conversion</b></a></button>&emsp;
+                                 <button type="button" style="background-color:#ffc10794; border-radius:1rem; border:none;"><a href="<?php ROOT?>/deepfake.php"><b>Back</b></a></button>
                               </div>
                            </div>
                         </div>

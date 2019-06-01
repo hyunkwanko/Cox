@@ -10,7 +10,7 @@
     
     <header class="header-bar d-flex d-lg-flex align-items-center" data-aos="fade-down">
         <div class="site-logo">
-            <a href="<?php ROOT?>/">COX</a>
+            <a href="<?php ROOT?>/">PKNUMIND</a>
         </div>
       
         <div class="d-inline-block d-xl-block ml-md-0 ml-auto py-3" style="position: relative; top: 3px;">

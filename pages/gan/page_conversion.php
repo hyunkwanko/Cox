@@ -46,8 +46,8 @@
                         <div class="container">
                            <div class="row">
                               <div class="col-sm-12">
-                                 <button type="button" style="background-color:#ffc10794; border-radius:1rem; border:none;"><a href="<?php ROOT?>/pages/gan/conversion_process.php?file=<?php echo $_GET['file'];?>&model=<?php echo $_GET['model'];?>">얼굴 합성</a></button>&emsp;
-                                 <button type="button" style="background-color:#ffc10794; border-radius:1rem; border:none;"><a href="<?php ROOT?>/gan.php">돌아가기</a></button>
+                                 <button type="button" style="background-color:#ffc10794; border-radius:1rem; border:none;"><a href="<?php ROOT?>/pages/gan/conversion_process.php?file=<?php echo $_GET['file'];?>&model=<?php echo $_GET['model'];?>"><b>Conversion</b></a></button>&emsp;
+                                 <button type="button" style="background-color:#ffc10794; border-radius:1rem; border:none;"><a href="<?php ROOT?>/gan.php"><b>Back</b></a></button>
                               </div>
                            </div>
                         </div>

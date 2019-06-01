@@ -46,8 +46,8 @@
                         <div class="container">
                            <div class="row">
                               <div class="col-sm-12">
-                                 <button type="button" style="background-color:#ffc10794; border-radius:1rem; border:none;"><a href="<?php ROOT?>/pages/deepfake/extract_new_process.php?file=<?php echo $_GET['file'];?>&file1=<?php echo $_GET['file1'];?>">얼굴 추출</a></button>&emsp;
-                                 <button type="button" style="background-color:#ffc10794; border-radius:1rem; border:none;"><a href="<?php ROOT?>/deepfake.php">돌아가기</a></button>
+                                 <button type="button" style="background-color:#ffc10794; border-radius:1rem; border:none;"><a href="<?php ROOT?>/pages/deepfake/extract_new_process.php?file=<?php echo $_GET['file'];?>&file1=<?php echo $_GET['file1'];?>"><b>Extract</b></a></button>&emsp;
+                                 <button type="button" style="background-color:#ffc10794; border-radius:1rem; border:none;"><a href="<?php ROOT?>/deepfake.php"><b>Back</b></a></button>
                               </div>
                            </div>
                         </div>

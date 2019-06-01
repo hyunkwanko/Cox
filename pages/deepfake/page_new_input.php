@@ -44,10 +44,17 @@
                      </div>
                      <div class="single_appartment_content">
                         <div class="contents" style="text-align:center;">
+                           <div class="container">
+                              <b>Select Video</b>
+                           </div><br>
+
+                           <div class="container">
+                              <b>First Video : <?php echo $_GET['file'];?></b>
+                           </div><br>
+
                             <div class="container">
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <div>첫번째 영상: <?php echo $_GET['file'];?></div><br>
                                         <form method="post" action="<?php ROOT?>/view/deepfake/view_new_upload_preview.php?file=<?php echo $_GET['file'];?>" enctype="multipart/form-data">
                                             <input type="file" name="upload">
                                             <input type="submit" style="background-color:#ffc10794; border-radius:1rem; border:none;" value="Preview">
